@@ -21,7 +21,7 @@ int main() {
     for (int i = 0; i < 3; i++) {
         *current = 0;
         for (int j = 0; j < 3; j++) {
-            *current += arr[i][j];
+            *current =(*current)+ arr[i][j];
         }
         *max = (*current > *max) ? *current : *max;
     }
